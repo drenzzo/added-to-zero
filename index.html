@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Is is added to zero?</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" />
+
+</head>
+
+<body>
+
+    <main class="container">
+        <div class="grid">
+            <div>
+                <h2>Enter only integer numbers separated by commas:</h2>
+
+                <p>Copy and paste any of these examples to quickly evaluate the feature:</p>
+                <pre>-1, 0, 1, 2, -1, -4, 5, -5</pre>
+                <pre>-7, 1, 7, 2, 2, 6, 0, -5, -6</pre>
+                <pre>-3, 0, 3, 4, -4, -9, 6, -3</pre>
+                <br>
+
+                <input type="text" id="numberInput">
+                <p id="errorMsg" style="color: red"></p><br>
+                <button onclick="evaluateFindTriplets()">Evaluate</button>
+                <button class="secondary" onclick="clearInputAndResults()">Clear</button>
+
+                <br>
+                <br>
+                <pre id="result"></pre>
+            </div>
+
+        </div>
+
+
+    </main>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
